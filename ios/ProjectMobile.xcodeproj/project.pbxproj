@@ -39,6 +39,7 @@
 		4E3D2C2B7BB44AE976114CDA /* libPods-ProjectMobile-ProjectMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectMobile-ProjectMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5811A2F3BFEAEC3C536D3FB9 /* Pods-ProjectMobile-ProjectMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile-ProjectMobileTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectMobile-ProjectMobileTests/Pods-ProjectMobile-ProjectMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ProjectMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93A0DF4A27D28F32001B89C2 /* ProjectMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ProjectMobile.entitlements; path = ProjectMobile/ProjectMobile.entitlements; sourceTree = "<group>"; };
 		B5FCE45C2EBDA1F1108F9099 /* Pods-ProjectMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile.debug.xcconfig"; path = "Target Support Files/Pods-ProjectMobile/Pods-ProjectMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E590A1AAA4D05BDA5EAC2264 /* Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectMobile-ProjectMobileTests/Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +87,7 @@
 		13B07FAE1A68108700A75B9A /* ProjectMobile */ = {
 			isa = PBXGroup;
 			children = (
+				93A0DF4A27D28F32001B89C2 /* ProjectMobile.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -114,7 +116,6 @@
 				E590A1AAA4D05BDA5EAC2264 /* Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig */,
 				5811A2F3BFEAEC3C536D3FB9 /* Pods-ProjectMobile-ProjectMobileTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -498,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ProjectMobile/ProjectMobile.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProjectMobile/Info.plist;
@@ -524,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ProjectMobile/ProjectMobile.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ProjectMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
