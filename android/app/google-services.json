@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "785278866096",
+    "project_id": "project-mobile-training",
+    "storage_bucket": "project-mobile-training.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785278866096:android:61ddac50f9166f67cfa175",
+        "android_client_info": {
+          "package_name": "com.boilerplate.rn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa0u59MFH5PwO611oATOjBNBOcC34GNmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785278866096-k9a4g47vr53ml19378f70oj166ktmb13.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.projectmobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785278866096:android:53ccf6b4da9dc602cfa175",
+        "android_client_info": {
+          "package_name": "com.projectmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa0u59MFH5PwO611oATOjBNBOcC34GNmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785278866096-k9a4g47vr53ml19378f70oj166ktmb13.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.projectmobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
