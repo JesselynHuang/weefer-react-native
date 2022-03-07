@@ -5,6 +5,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 function Camera(props) {
   const [photo, setPhoto] = useState('');
   const [camera, setCamera] = useState('');
+
   function _openCamera() {
     ImagePicker.openCamera({
       width: 300,
@@ -16,7 +17,6 @@ function Camera(props) {
     });
   }
 
-  console.log('photo', photo);
   function _choosePhoto() {
     ImagePicker.openPicker({
       width: 300,
