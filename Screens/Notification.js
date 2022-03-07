@@ -87,9 +87,9 @@ function Notification(props) {
       <TouchableOpacity onPress={() => _onShowNotification()}>
         <Text>{' Notif'}</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => onDisplayRemoteNotification()}>
+      {/* <TouchableOpacity onPress={() => onDisplayRemoteNotification()}>
         <Text>{' Get Token'}</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 }

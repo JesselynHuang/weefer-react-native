@@ -13,6 +13,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		93660CB327D5AD5A00A5ADF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93660CB227D5AD5A00A5ADF8 /* GoogleService-Info.plist */; };
 		A4722AAA0162EF2A77D83C23 /* libPods-ProjectMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F159A433243E60B7217FB545 /* libPods-ProjectMobile.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4E3D2C2B7BB44AE976114CDA /* libPods-ProjectMobile-ProjectMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectMobile-ProjectMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5811A2F3BFEAEC3C536D3FB9 /* Pods-ProjectMobile-ProjectMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile-ProjectMobileTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectMobile-ProjectMobileTests/Pods-ProjectMobile-ProjectMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ProjectMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93660CB227D5AD5A00A5ADF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93A0DF4A27D28F32001B89C2 /* ProjectMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ProjectMobile.entitlements; path = ProjectMobile/ProjectMobile.entitlements; sourceTree = "<group>"; };
 		B5FCE45C2EBDA1F1108F9099 /* Pods-ProjectMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile.debug.xcconfig"; path = "Target Support Files/Pods-ProjectMobile/Pods-ProjectMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E590A1AAA4D05BDA5EAC2264 /* Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectMobile-ProjectMobileTests/Pods-ProjectMobile-ProjectMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* ProjectMobile */ = {
 			isa = PBXGroup;
 			children = (
+				93660CB227D5AD5A00A5ADF8 /* GoogleService-Info.plist */,
 				93A0DF4A27D28F32001B89C2 /* ProjectMobile.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -247,6 +250,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				93660CB327D5AD5A00A5ADF8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
