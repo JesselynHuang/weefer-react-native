@@ -1,6 +1,16 @@
 import notifee from '@notifee/react-native';
 let lastId = 0;
 
+function showLocalNotification(title, description, data) {
+  lastId++;
+
+  let notificationData = data;
+
+  if (typeof data === 'string') {
+    notificationData = JSON.parse(data);
+  }
+}
+
 async function onDisplayNotification(title, body, data) {
   lastId++;
 
@@ -20,4 +30,4 @@ async function onDisplayNotification(title, body, data) {
   });
 }
 
-export default onDisplayNotification;
+export default {showLocalNotification, onDisplayNotification};
