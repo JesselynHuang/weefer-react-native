@@ -14,8 +14,6 @@ target 'ProjectMobile' do
     :hermes_enabled => false
   )
 
-  pod 'react-native-geocoder', :path => '../node_modules/react-native-geocoder'
-
   target 'ProjectMobileTests' do
     inherit! :complete
     # Pods for testing

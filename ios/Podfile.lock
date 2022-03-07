@@ -296,8 +296,6 @@ PODS:
   - React-jsinspector (0.67.3)
   - React-logger (0.67.3):
     - glog
-  - react-native-geocoder (0.5.0):
-    - React
   - react-native-google-maps (0.30.1):
     - Google-Maps-iOS-Utils (= 3.10.3)
     - GoogleMaps (= 5.1.0)
@@ -369,10 +367,10 @@ PODS:
     - React-jsi (= 0.67.3)
     - React-logger (= 0.67.3)
     - React-perflogger (= 0.67.3)
-  - RNNotifee (5.0.1):
+  - RNNotifee (5.0.0):
     - React-Core
-    - RNNotifee/NotifeeCore (= 5.0.1)
-  - RNNotifee/NotifeeCore (5.0.1):
+    - RNNotifee/NotifeeCore (= 5.0.0)
+  - RNNotifee/NotifeeCore (5.0.0):
     - React-Core
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -420,7 +418,6 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-geocoder (from `../node_modules/react-native-geocoder`)
   - react-native-google-maps (from `../node_modules/react-native-maps`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -492,8 +489,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
-  react-native-geocoder:
-    :path: "../node_modules/react-native-geocoder"
   react-native-google-maps:
     :path: "../node_modules/react-native-maps"
   react-native-maps:
@@ -560,7 +555,6 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 15ea57ead631a11fad57634ff69f78e797113a39
   React-jsinspector: 1e1e03345cf6d47779e2061d679d0a87d9ae73d8
   React-logger: 1e10789cb84f99288479ba5f20822ce43ced6ffe
-  react-native-geocoder: 757427682892bb256f3b3745858cc90eba148a8e
   react-native-google-maps: 17432eb7412df3c65d7c7c52ede085d0f5624f77
   react-native-maps: d752b0dd0e1951d815b1336332835aab6b4a836f
   React-perflogger: 93d3f142d6d9a46e635f09ba0518027215a41098
@@ -575,10 +569,10 @@ SPEC CHECKSUMS:
   React-RCTVibration: d0361f15ea978958fab7ffb6960f475b5063d83f
   React-runtimeexecutor: af1946623656f9c5fd64ca6f36f3863516193446
   ReactCommon: 650e33cde4fb7d36781cd3143f5276da0abb2f96
-  RNNotifee: 3cd9f6e1ef4e7a2555e3b51cd59a11c0abcc65b3
+  RNNotifee: 907315a06435ef69a5b2a8be66f14689181df59d
   Yoga: 90dcd029e45d8a7c1ff059e8b3c6612ff409061a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 4809ccb2fa002d99c99dbcd5f5f504f263ba036c
+PODFILE CHECKSUM: 1a84813f9850fc6f853aaa05a8b3900626e17ece
 
 COCOAPODS: 1.11.2

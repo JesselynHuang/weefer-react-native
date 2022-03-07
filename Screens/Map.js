@@ -1,25 +1,14 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
-import Geocoder from 'react-native-geocoder';
 
 function Map(props) {
   const [targetLatitude, setTargetLatitude] = useState(37.78825);
   const [targetLongitude, setTargetLongitude] = useState(-122.4324);
-  const [locationString, setLocationString] = useState('');
-
-  function getLocationInString(location) {
-    Geocoder.geocodePosition(location)
-      .then(res => setLocationString(res[0].formattedAddress))
-      .catch(error => console.log(error))
-      .finally(() => console.log('done'));
-  }
 
   function onRegionChange(value) {
     setTargetLatitude(value.latitude);
     setTargetLongitude(value.longitude);
-    const body = {lat: value.latitude, lng: value.longitude};
-    getLocationInString(body);
   }
   return (
     <View style={styles.container}>
@@ -27,6 +16,7 @@ function Map(props) {
       <MapView
         style={styles.wrapMap}
         provider={PROVIDER_GOOGLE}
+        zoomEnabled={false}
         onRegionChangeComplete={onRegionChange}
         initialRegion={{
           latitude: targetLatitude,
@@ -39,7 +29,6 @@ function Map(props) {
         style={styles.iconMarker}
         source={require('../Assets/Images/map_marker-24.png')}
       />
-      <Text>{locationString}</Text>
     </View>
   );
 }
