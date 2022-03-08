@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import notifee, {EventType} from '@notifee/react-native';
-import NotificationService from '../libs/NotificationService';
+import NotificationService from '../../libs/NotificationService';
 import messaging from '@react-native-firebase/messaging';
 
 function Notification(props) {
