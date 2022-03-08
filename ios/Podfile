@@ -14,6 +14,10 @@ target 'ProjectMobile' do
     :hermes_enabled => false
   )
 
+  #Permissions
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+
   target 'ProjectMobileTests' do
     inherit! :complete
     # Pods for testing

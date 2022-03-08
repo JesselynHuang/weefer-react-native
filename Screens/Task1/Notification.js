@@ -25,7 +25,6 @@ function Notification(props) {
 
   //notifeePermission
   useEffect(() => {
-    // requestPermission();
     requestUserPermission();
   });
 
@@ -40,21 +39,6 @@ function Notification(props) {
       remoteMessage.data,
     );
   });
-
-  // const onDisplayRemoteNotification = async () => {
-  //   const authStatus = await messaging().requestPermission();
-  //   const enabled =
-  //     authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-  //     authStatus === messaging.AuthorizationStatus.PROVISIONAL;
-
-  //   if (enabled) {
-  //     await messaging()
-  //       .getToken()
-  //       .then(fcmToken => {
-  //         console.log('fcmToken -> ', fcmToken);
-  //       });
-  //   }
-  // };
 
   async function requestUserPermission() {
     const authStatus = await messaging().requestPermission();
@@ -73,12 +57,7 @@ function Notification(props) {
       console.log('fcme token generated', fcmToken);
     } catch (error) {
       console.log('error', error);
-      // alert(error?.message);
     }
-  };
-
-  const requestPermission = async () => {
-    const authStatus = await messaging().requestPermission();
   };
 
   return (
@@ -87,9 +66,6 @@ function Notification(props) {
       <TouchableOpacity onPress={() => _onShowNotification()}>
         <Text>{' Notif'}</Text>
       </TouchableOpacity>
-      {/* <TouchableOpacity onPress={() => onDisplayRemoteNotification()}>
-        <Text>{' Get Token'}</Text>
-      </TouchableOpacity> */}
     </View>
   );
 }
