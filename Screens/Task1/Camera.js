@@ -59,7 +59,6 @@ const styles = StyleSheet.create({
   preview: {
     marginLeft: 10,
     marginTop: 20,
-    borderWidth: 1,
     alignItems: 'center',
     width: 100,
     height: 100,

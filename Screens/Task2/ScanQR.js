@@ -10,17 +10,22 @@ function ScanQR(props) {
   };
 
   return (
-    <View>
+    <View
+      style={{
+        flex: 1,
+      }}>
       <Text style={styles.txtTitle}>QR Code from React Native QR Scanner</Text>
       <QRCodeScanner
         reactivate={true}
         showMarker={true}
         onRead={onSuccess}
         cameraType={'back'}
+        cameraContainerStyle={{width: 200, height: 200}}
+        markerStyle={{width: 200, height: 200}}
         cameraStyle={styles.camera}
         topContent={
           <Text style={styles.centerText}>
-            Go to{' '}
+            Go to
             <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on
             your computer and scan the QR code.
           </Text>
@@ -38,7 +43,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   camera: {
-    marginTop: 45,
     marginLeft: 10,
     width: 200,
     height: 200,
