@@ -1,24 +1,20 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, View, ScrollView} from 'react-native';
 import Notification from './Screens/Notification';
 import Map from './Screens/Map';
 import Camera from './Screens/Camera';
+import ScanQR from './Screens/ScanQR';
 
 function App() {
   return (
     <SafeAreaView>
       <View>
-        <Notification />
-        <Map />
-        <Camera />
+        <ScrollView>
+          <Notification />
+          <Map />
+          <Camera />
+          <ScanQR />
+        </ScrollView>
       </View>
     </SafeAreaView>
   );

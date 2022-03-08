@@ -38,7 +38,7 @@ function Camera(props) {
       </RNCamera>
       <View>
         <Text style={styles.prevTitle}> PREVIEW </Text>
-        <Image style={styles.img} source={{uri: photo}} />
+        <Image style={styles.img} source={{uri: photo ? photo : null}} />
       </View>
     </View>
   );
