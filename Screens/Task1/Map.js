@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 
-function Map(props) {
+function Map({navigation}) {
   const [targetLatitude, setTargetLatitude] = useState(37.78825);
   const [targetLongitude, setTargetLongitude] = useState(-122.4324);
 
@@ -12,7 +12,9 @@ function Map(props) {
   }
   return (
     <View style={styles.container}>
-      <Text>This Is Map Screen</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Screen')}>
+        <Text>This Is Map Screen</Text>
+      </TouchableOpacity>
       <MapView
         style={styles.wrapMap}
         provider={PROVIDER_GOOGLE}
@@ -27,7 +29,7 @@ function Map(props) {
       />
       <Image
         style={styles.iconMarker}
-        source={require('../Assets/Images/map_marker-24.png')}
+        source={require('../../Assets/Images/map_marker-24.png')}
       />
     </View>
   );
