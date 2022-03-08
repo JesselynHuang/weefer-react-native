@@ -1,6 +1,5 @@
 import React, {useState, useRef} from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
-import ImagePicker from 'react-native-image-crop-picker';
 import {RNCamera} from 'react-native-camera';
 
 function Camera(props) {
