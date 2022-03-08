@@ -4,6 +4,7 @@ import Notification from './Screens/Notification';
 import Map from './Screens/Map';
 import Camera from './Screens/Camera';
 import ScanQR from './Screens/ScanQR';
+import SignIn from './Screens/SignIn';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Map />
           <Camera />
           <ScanQR />
+          <SignIn />
         </ScrollView>
       </View>
     </SafeAreaView>

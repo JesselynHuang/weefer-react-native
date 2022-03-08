@@ -1,4 +1,9 @@
 PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -171,6 +176,10 @@ PODS:
   - GoogleMaps/Base (5.1.0)
   - GoogleMaps/Maps (5.1.0):
     - GoogleMaps/Base
+  - GoogleSignIn (6.1.0):
+    - AppAuth (~> 1.4)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -190,6 +199,10 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
+  - GTMAppAuth (1.2.2):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - GTMSessionFetcher/Core (1.7.0)
   - libevent (2.1.12)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -488,6 +501,9 @@ PODS:
     - Firebase/Messaging (= 8.12.1)
     - React-Core
     - RNFBApp
+  - RNGoogleSignin (7.1.0):
+    - GoogleSignIn (~> 6.1.0)
+    - React-Core
   - RNNotifee (5.0.0):
     - React-Core
     - RNNotifee/NotifeeCore (= 5.0.0)
@@ -560,12 +576,14 @@ DEPENDENCIES:
   - "RNFBAnalytics (from `../node_modules/@react-native-firebase/analytics`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
+  - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
   - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - AppAuth
     - CocoaAsyncSocket
     - Firebase
     - FirebaseAnalytics
@@ -587,7 +605,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleMaps
+    - GoogleSignIn
     - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
     - libevent
     - nanopb
     - OpenSSL-Universal
@@ -667,6 +688,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBMessaging:
     :path: "../node_modules/@react-native-firebase/messaging"
+  RNGoogleSignin:
+    :path: "../node_modules/@react-native-google-signin/google-signin"
   RNNotifee:
     :path: "../node_modules/@notifee/react-native"
   RNPermissions:
@@ -675,6 +698,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
@@ -701,7 +725,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: ae033c3aad67e68294369373056b4d74cc8ae0d6
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
+  GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
+  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
@@ -737,6 +764,7 @@ SPEC CHECKSUMS:
   RNFBAnalytics: afd361a31db57b61853ef321a872a132df0f4519
   RNFBApp: 06c8447270d295edc431bccd55970d8711a07a42
   RNFBMessaging: 8e3575bb0303b43a852bf5decbe99c3272035048
+  RNGoogleSignin: 233fdfa02522216c19bf02a1e6c60b60a75ffb4c
   RNNotifee: 907315a06435ef69a5b2a8be66f14689181df59d
   RNPermissions: bcd846e8f5a7f39e921cc7ca7172e2de0e698b6f
   Yoga: 90dcd029e45d8a7c1ff059e8b3c6612ff409061a
