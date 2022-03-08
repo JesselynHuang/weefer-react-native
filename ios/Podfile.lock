@@ -510,6 +510,8 @@ PODS:
     - RNNotifee/NotifeeCore (= 5.0.1)
   - RNNotifee/NotifeeCore (5.0.1):
     - React-Core
+  - RNPermissions (3.3.0):
+    - React-Core
   - RNReanimated (2.4.1):
     - DoubleConversion
     - FBLazyVector
@@ -520,7 +522,6 @@ PODS:
     - RCTTypeSafety
     - React
     - React-callinvoker
-  - RNNotifee (5.0.0):
     - React-Core
     - React-Core/DevSupport
     - React-Core/RCTWebSocket
@@ -543,8 +544,6 @@ PODS:
     - React-Core
     - React-RCTImage
   - TOCropViewController (2.6.1)
-  - RNPermissions (3.3.0):
-    - React-Core
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -614,10 +613,9 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - "RNNotifee (from `../node_modules/@notifee/react-native`)"
+  - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - "RNNotifee (from `../node_modules/@notifee/react-native`)"
-  - RNPermissions (from `../node_modules/react-native-permissions`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -648,6 +646,7 @@ SPEC REPOS:
     - nanopb
     - OpenSSL-Universal
     - PromisesObjC
+    - TOCropViewController
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -731,14 +730,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-image-crop-picker"
   RNNotifee:
     :path: "../node_modules/@notifee/react-native"
+  RNPermissions:
+    :path: "../node_modules/react-native-permissions"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  RNNotifee:
-    :path: "../node_modules/@notifee/react-native"
-  RNPermissions:
-    :path: "../node_modules/react-native-permissions"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -809,14 +806,10 @@ SPEC CHECKSUMS:
   RNGestureHandler: 77d59828d40838c9fabb76a12d2d0a80c006906f
   RNImageCropPicker: 44e2807bc410741f35d4c45b6586aedfe3da39d2
   RNNotifee: 3cd9f6e1ef4e7a2555e3b51cd59a11c0abcc65b3
+  RNPermissions: bcd846e8f5a7f39e921cc7ca7172e2de0e698b6f
   RNReanimated: 32c91e28f5780937b8efc07ddde1bab8d373fe0b
   RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19
   TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
-  RNFBAnalytics: afd361a31db57b61853ef321a872a132df0f4519
-  RNFBApp: 06c8447270d295edc431bccd55970d8711a07a42
-  RNFBMessaging: 8e3575bb0303b43a852bf5decbe99c3272035048
-  RNNotifee: 907315a06435ef69a5b2a8be66f14689181df59d
-  RNPermissions: bcd846e8f5a7f39e921cc7ca7172e2de0e698b6f
   Yoga: 90dcd029e45d8a7c1ff059e8b3c6612ff409061a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
