@@ -20,8 +20,6 @@ function ScanQR(props) {
         showMarker={true}
         onRead={onSuccess}
         cameraType={'back'}
-        cameraContainerStyle={{width: 200, height: 200}}
-        markerStyle={{width: 200, height: 200}}
         cameraStyle={styles.camera}
         topContent={
           <Text style={styles.centerText}>
