@@ -14,41 +14,13 @@
       },
       "oauth_client": [
         {
-          "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCa0u59MFH5PwO611oATOjBNBOcC34GNmM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "785278866096-k9a4g47vr53ml19378f70oj166ktmb13.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.projectmobile"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:785278866096:android:53ccf6b4da9dc602cfa175",
-        "android_client_info": {
-          "package_name": "com.projectmobile"
-        }
-      },
-      "oauth_client": [
+          "client_id": "785278866096-191tk3mavcdh07g3jtb3trmeepop3v2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boilerplate.rn",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
         {
           "client_id": "785278866096-t6b0qbgcea3e69i86nan0cohrqbsoqg9.apps.googleusercontent.com",
           "client_type": 3
