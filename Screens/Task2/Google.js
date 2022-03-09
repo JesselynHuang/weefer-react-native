@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
 import {
   GoogleSignin,
   statusCodes,
@@ -32,6 +32,17 @@ export default function Google() {
     }
   }
 
+  async function signOut() {
+    try {
+      await GoogleSignin.signOut();
+      setuserInfo({
+        userInfo: null,
+      });
+    } catch (error) {
+      console.log('error', error);
+    }
+  }
+
   console.log('userinfo-------->', userInfo);
   async function signIn() {
     try {
@@ -40,7 +51,7 @@ export default function Google() {
       setuserInfo(userInfo);
 
       const {accessToken, idToken} = await GoogleSignin.signIn();
-      // setloggedIn(true);
+
       const credential = auth.GoogleAuthProvider.credential(
         idToken,
         accessToken,
@@ -75,6 +86,18 @@ export default function Google() {
         onPress={signIn}
         // disabled={this.state.isSigninInProgress}
       />
+      <TouchableOpacity onPress={signOut}>
+        <Text style={styles.titleSignOut}>Sign Out</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  titleSignOut: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 10,
+    marginLeft: 75,
+  },
+});
