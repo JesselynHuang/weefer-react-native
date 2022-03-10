@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ProjectMobile</string>
-    <!-- <string name="facebook_app_id">3353731784862007</string>
-    <string name="facebook_client_token">8a2b06d5e027c52b8cacbc915f31ab34</string> -->
     <string name="facebook_app_id">3353731784862007</string> 
     <string name="fb_login_protocol_scheme">fb3353731784862007</string>
-
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+     <string moduleConfig="true" name="CodePushDeploymentKey">Gh_16xVayOjkfN0Db8jUIX3qM65p5WHb62vI-</string>
 </resources>

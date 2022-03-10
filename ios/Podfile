@@ -18,6 +18,8 @@ target 'ProjectMobile' do
   permissions_path = '../node_modules/react-native-permissions/ios'
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
 
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
   target 'ProjectMobileTests' do
     inherit! :complete
     # Pods for testing

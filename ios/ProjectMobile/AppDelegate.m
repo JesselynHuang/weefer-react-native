@@ -15,6 +15,10 @@
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
 #import <GoogleMaps/GoogleMaps.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <CodePush/CodePush.h>
+#import <AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes.h>
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
@@ -31,7 +35,10 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [[FBSDKApplicationDelegate sharedInstance] application:application
+[AppCenterReactNative register];
+[AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
+[AppCenterReactNativeCrashes registerWithAutomaticProcessing];
+[[FBSDKApplicationDelegate sharedInstance] application:application
                            didFinishLaunchingWithOptions:launchOptions];
 [GMSServices provideAPIKey:@"AIzaSyDZWNFDZkbMIgepeP6UdEwMCPRZNjaIZY8"];
 #ifdef FB_SONARKIT_ENABLED
@@ -63,7 +70,7 @@ static void InitializeFlipper(UIApplication *application) {
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  return [CodePush bundleURL];
 #endif
 }
 
