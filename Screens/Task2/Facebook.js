@@ -23,11 +23,22 @@ export default function Facebook() {
     const facebookCredential = auth.FacebookAuthProvider.credential(
       data.accessToken,
     );
+    initUser(data.accessToken);
 
-    return (
-      auth().signInWithCredential(facebookCredential),
-      console.log('success--->', facebookCredential)
-    );
+    return auth().signInWithCredential(facebookCredential);
+  }
+  function initUser(token) {
+    fetch(
+      'https://graph.facebook.com/v2.5/me?fields=email,name,friends&access_token=' +
+        token,
+    )
+      .then(response => response.json())
+      .then(result => {
+        console.log('result---->', result);
+      })
+      .catch(() => {
+        reject('ERROR GETTING DATA FROM FACEBOOK');
+      });
   }
   return (
     <View>
